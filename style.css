@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  background-color: rgb(25, 28, 77);
+  background-color: rgb(5, 8, 49);
   color: white;
 }
 
@@ -13,15 +13,25 @@ h1 {
   color: darkslategrey;
 }
 
-.container {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.container-tareas {
+  margin: 30px;
+  margin-left: 15%;
   width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
+  background-color: rgb(208, 224, 230);
   padding: 30px;
   border-radius: 20px;
+  float: left;
+}
+
+.container-historial {
+  margin-top: 30px;
+  margin-right: 15%;
+  width: 30%;
+  background-color: rgb(208, 224, 230);
+  padding: 30px;
+  border-radius: 20px;
+  float: left;
+  display: none;
 }
 
 .tareasList {
@@ -34,12 +44,19 @@ form {
   display: flex;
 }
 
-input {
+.inputTitulo {
   padding: 15px 10px;
   width: 300px;
   outline: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.inputTarea {
+  padding: 15px 10px;
+  width: 300px;
+  outline: none;
+  border: solid 2px;
 }
 
 .btn-add {
@@ -52,6 +69,8 @@ input {
   outline: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: solid 2px;
+  border-color: black;
 }
 
 .btn-add:hover {
@@ -59,12 +78,44 @@ input {
   color: white;
   border: none;
   font-family: fantasy;
-  background-color: rgb(115, 223, 142);
+  background-color: rgb(2, 156, 156);
   font-size: 1.4rem;
+  border: solid 2px;
+  border-color: black;
   outline: none;
 }
 
-.empty {
+.btn-hist {
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  background-color: rgb(21, 30, 148);
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: solid 1px;
+  border-color: black;
+  margin-bottom: 5px;
+}
+
+.btn-hist:hover {
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  background-color: rgb(32, 43, 204);
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: solid 1px;
+  border-color: black;
+  margin-bottom: 5px;
+}
+
+.empty-tareas {
+  color: darkslategrey;
+}
+
+.empty-hist {
   color: darkslategrey;
 }
 
@@ -97,10 +148,27 @@ li p {
   border-bottom-right-radius: 10px;
   width: 10%;
   font-size: 1.2rem;
-
 }
 
 .btn-delete:hover {
   background-color: rgb(255, 7, 7);
+  cursor: pointer;
+}
+
+#container-cerrar{
+  text-align: end;
+}
+
+#container-cerrar button {
+  border: none;
+  background-color: rgb(165, 22, 22);
+  color: beige;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+#container-cerrar button:hover {
+  background-color: rgb(252, 54, 54);
   cursor: pointer;
 }
